@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book for Men - Eiwitrijke, snelle recepten</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif, system-ui;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        .cta {
+            background: #e74c3c;
+            color: white;
+            padding: 18px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: transform 0.2s, background 0.2s;
+            min-width: 250px;
+        }
+
+        .cta:hover {
+            background: #c0392b;
+            transform: scale(1.05);
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 0;
+            gap: 20px;
+        }
+
+        .feature {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .testimonial, .extra-info, .contact, .recipe-preview, .guarantee {
+            margin: 30px 0;
+        }
+
+        .testimonial {
+            background: #f0f0f0;
+            padding: 20px;
+            border-left: 4px solid #2c3e50;
+            font-style: italic;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .testimonial:before {
+            content: '"';
+            font-size: 60px;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            color: #2c3e50;
+            opacity: 0.2;
+        }
+
+        .contact {
+            font-size: 0.9em;
+            color: #555;
+            text-align: center;
+        }
+
+        .recipe-preview {
+            background: #e8f4f8;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .guarantee {
+            text-align: center;
+            padding: 15px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .order-section {
+            background: #f9f9f9;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin: 40px 0;
+        }
+
+        .counter {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            margin: 0 5px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .cta {
+                width: 90%;
+                text-align: center;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>RECIPE BOOK FOR MEN</h1>
+        <p>Eiwitrijke maaltijden in onder 30 minuten - geen kookskills nodig</p>
+    </header>
+
+    <main>
+        <center>
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gezond eten" width="600" loading="lazy">
+            <br>
+            <a href="#order" class="cta">NU BESTELLEN - Slechts €14.99 (Limited Edition)</a>
+        </center>
+
+        <section class="extra-info">
+            <h2>Waarom dit boek?</h2>
+            <p>Geen lange ingrediëntenlijsten. Geen moeilijke technieken. Gewoon snel resultaat, zodat jij meer tijd hebt voor je workout – of Netflix. Dit kookboek is gemaakt voor mannen met weinig tijd, maar veel honger naar gezondheid.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>⚡ Snel</h3>
+                <p>Alle recepten in onder 30 minuten klaar</p>
+            </div>
+            <div class="feature">
+                <h3>💪 Eiwitrijk</h3>
+                <p>Optimaliseer je spieropbouw en herstel</p>
+            </div>
+            <div class="feature">
+                <h3>🙌 Makkelijk</h3>
+                <p>Stapsgewijze instructies met basis ingrediënten</p>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <p>"Ik had nul kookervaring en toch maak ik nu elke dag iets gezonds klaar – thanks!" – Jonas, 24</p>
+            <p style="margin-top: 15px; font-weight: bold;">"Al <span class="counter">1.200+</span> mannen gingen je voor!"</p>
+        </section>
+
+        <section class="recipe-preview">
+            <h3>Probeer nu gratis: Pasta met kip in 20 min</h3>
+            <p><strong>Ingrediënten:</strong> kipfilet (200g), pasta (75g), pesto (2 el), cherrytomaatjes (10), rucola (handje)</p>
+            <p><strong>Stappen:</strong> 1) Kook pasta, 2) Bak kip, 3) Mix alles samen!</p>
+        </section>
+
+        <section class="guarantee">
+            <p>⭐ <strong>Niet tevreden?</strong> Geld-terug-garantie binnen 30 dagen!</p>
+        </section>
+
+        <section id="order" class="order-section">
+            <h2>Begin vandaag nog met gezond eten!</h2>
+            <p>✅ Direct toegang tot 50+ recepten<br>
+               ✅ 30-dagen geld-terug-garantie<br>
+               ✅ Beperkte oplage - nog <span class="counter">87</span> exemplaren beschikbaar!</p>
+            <a href="https://www.amazon.nl" class="cta">JA, IK WIL DIT BOEK NU →</a>
+            <p><small>Veilig betalen via Amazon</small></p>
+        </section>
+
+        <footer class="contact">
+            <p>Heb je vragen? Mail ons op <a href="mailto:info@recipebookformen.com">info@recipebookformen.com</a></p>
+        </footer>
+    </main>
+
+    <script>
+        // Eenvoudige countdown voor urgency (optioneel)
+        document.addEventListener('DOMContentLoaded', function() {
+            const counter = document.querySelector('.order-section .counter');
+            if (counter) {
+                let count = 87;
+                setInterval(() => {
+                    if (count > 0) {
+                        count--;
+                        counter.textContent = count;
+                    }
+                }, 60000); // Verlaag elke minuut
+            }
+        });
+    </script>
+    
+</body>
+</html>
